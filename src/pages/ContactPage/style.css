@@ -1,0 +1,72 @@
+.btn--submit{
+  width: 36%;
+  height: 5vw;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #046C08;
+  border: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+.content__table {
+  width: 76%;
+}
+.title__container {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+  border-right: 1px solid #ccc;
+  background-color: #ececec;
+}
+.title__container h4 {
+  border: none;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.title__container span {
+  display: flex;
+  background-color: #cc0000;
+  color: #fff;
+  border-radius: 5px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 2px;
+}
+.input__container {
+  padding: 12px;
+  width: 100%;
+}
+.input__container input {
+  height: 50px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding-left: 10px;
+}
+.input__container input:focus {
+  background-color: #ffffcc;
+}
+.input__container textarea {
+  height: 60px;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+@media screen and (max-width: 768px) {
+  .content__table {
+    width: 95%;
+  }
+  .content__table__row {
+    flex-direction: column;
+  }
+  .title__container {
+    width: 100%;
+    height: 40px !important;
+  }
+  .btn--submit{
+  width: 95%;
+  height: 10vw;
+  font-size: 3vw;
+}
+}

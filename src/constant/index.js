@@ -57,3 +57,18 @@ export const srcImgHeader = [
   }
 ]
 
+export const options = [
+{
+  main: '屋根',
+  children:['平屋','2階建て','3階建て']
+},
+{
+  main: '外壁',
+  children:['平屋','2階建て','3階建て']
+},
+{
+  main: 'バルコニー',
+  children:['1個','2個以上']
+},
+]
+
