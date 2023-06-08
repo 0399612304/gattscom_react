@@ -1,0 +1,114 @@
+.news {
+  background-color: #e6ecf5;
+}
+.container__news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  padding: 50px 50px 100px 50px;
+}
+.container__news ul {
+  list-style: none;
+  padding-left: 6vw;
+}
+.container__news ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+.container__news ul li a {
+  margin-left: 20px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+.container__news ul li time {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+.container__news__title {
+}
+.text {
+}
+.container__news__title .text {
+  color: #00204c;
+}
+.container__news__title .text p {
+  font-weight: bold;
+  margin: 0;
+}
+.container__news__title a {
+  background-color: #004097;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+.lists__btn__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .news {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .container__news {
+    margin: 0;
+    padding: 0;
+    width: 96%;
+    flex-direction: column;
+  }
+  .container__news__title{
+    width: 100%;
+  }
+  .container__news__title .text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .container__news__title .text p {
+    margin: 3% 0 0 2%;
+    width: 100px;
+  }
+  .container__news__title a {
+    display: none;
+  }
+  .lists__btn__mobile {
+    background-color: #004097;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 15px;
+  }
+  .container__news ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .container__news ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container__news ul li a {
+    margin: 0;
+    font-size: 3vw;
+  }
+  .container__news ul li time {
+    font-size: 3vw;
+    padding: 10px 0;
+  }
+}
