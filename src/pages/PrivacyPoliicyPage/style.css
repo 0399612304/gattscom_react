@@ -1,0 +1,32 @@
+.privacy_policy dl {
+    background-color: #fff;
+    padding: 32px;
+    margin: 0 10% 16px 10%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.privacy_policy dt {
+    font-size: 24px;
+    margin-bottom: 11.2px;
+}
+.return_btn{
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 60px;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+.return_btn a {
+    display: inline-block;
+    background-color: #004097;
+    color: #fff;
+    padding: 16px 72px;
+    border-radius: 32px;
+    font-size: 19.2px;
+    transition: 0.3s;
+   
+}

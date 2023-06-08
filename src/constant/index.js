@@ -1,3 +1,4 @@
+
 export const dataHeaderSlide = [
   {
     id: 0,
@@ -5,7 +6,7 @@ export const dataHeaderSlide = [
   },
   {
     id: 1,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-8.png'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-8.webp'
   },
   {
     id: 2,
@@ -13,7 +14,7 @@ export const dataHeaderSlide = [
   },
   {
     id: 3,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-3.jpg'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-3.webp'
   },
   {
     id: 4,
@@ -54,6 +55,16 @@ export const srcImgHeader = [
     src: 'https://isamigiken.gattscom.com/image/renovation/renovation_mv.jpg',
     title: 'Renovation',
     text: '施工事例'
+  },
+  {
+    src: 'https://isamigiken.gattscom.com/image/news/news_mv.jpg',
+    title: 'New',
+    text: 'お知らせ'
+  },
+  {
+    src: 'https://isamigiken.gattscom.com/image/privacy_policy/privacy_policy_mv.jpg',
+    title: 'privacypolicy',
+    text: 'プライバシーポリシー'
   }
 ]
 

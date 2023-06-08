@@ -1,0 +1,43 @@
+
+.content .time {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    color: #231815;
+    font-weight: 550;
+    font-size: 16px;
+    
+}
+.content .name {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    color: #231815;
+    font-weight: 550;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.content ul {
+    width: 80%;
+}
+.content li {
+    list-style: none;
+    display: flex;
+}
+.content li div{
+    padding-right: 20px;
+}
+.content li a:hover {
+    box-shadow: 0px 1px #333333;
+}
+.content .content-top {   
+    border-top: 1px solid #99b3d5;
+    border-bottom: 1px solid #99b3d5;
+    padding: 20px;
+}
+.content .content-desc {
+    border-bottom: 1px solid #99b3d5;
+    padding: 20px;
+}
+@media screen and (max-width: 768px){
+    .content li {
+        display: flex;
+        flex-direction: column;
+    }
+}

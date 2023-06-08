@@ -37,10 +37,17 @@ const HomeSlide = (props) => {
       case 'renovation':
         setImg(srcImgHeader[4])
         break;
+        case 'new':
+        setImg(srcImgHeader[5])
+        break;
+        case 'privacy_policy':
+        setImg(srcImgHeader[6])
+        break;
       default:
 
     }
   }, [props.id])
+  console.log(img);
   return (
     <>
       <div className="container-fluild slide__container">
