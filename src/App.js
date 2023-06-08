@@ -1,18 +1,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import IsamiGiken from './components/IsamiGiken';
-import Footer from './components/Footer'
-import TopSimulation from './components/TopSimulation'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import RecruitPage from './pages/RecruitPage';
+import SimulationPage from './pages/SimulationPage';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <IsamiGiken/>
-      <TopSimulation/>
-      <Footer></Footer>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="recruit" element={<RecruitPage />} />
+        <Route path="simulation" element={<SimulationPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
