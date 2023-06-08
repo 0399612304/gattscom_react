@@ -12,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="recruit" element={<RecruitPage />} />
-        <Route path="simulation" element={<SimulationPage />} />
+        <Route path="/recruit" element={<RecruitPage />} />
+        <Route path="/simulation" element={<SimulationPage />} />
       </Routes>
     </BrowserRouter>
   );
