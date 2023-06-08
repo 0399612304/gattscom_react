@@ -1,0 +1,9 @@
+.content{
+  background-color:#E6ECF5;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10vw;
+}
+.content p{
+  font-weight: 300;
+}

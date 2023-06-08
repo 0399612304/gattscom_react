@@ -4,7 +4,7 @@ import IsamiGiken from '../../components/IsamiGiken';
 import TopSimulation from '../../components/TopSimulation';
 function HomePage() {
   return (
-    <Layout>
+    <Layout id='home'>
       <IsamiGiken />
       <TopSimulation />
     </Layout>

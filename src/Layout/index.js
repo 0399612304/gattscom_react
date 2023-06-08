@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-function Layout({ children }) {
+function Layout(props) {
   return (
     <div>
-      <Header></Header>
-      {
-        children
-      }
+      <Header id = {props.id}></Header>
+        {
+          props.children
+        }
       <Footer></Footer>
     </div>
   );

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
-import { dataHeaderSlide } from '../../constant';
+import { dataHeaderSlide, srcImgHeader } from '../../constant';
 import './style.css'
-const HomeSlide = () => {
+const HomeSlide = (props) => {
   const data = dataHeaderSlide
-  
+  const [img, setImg] = useState(
+    {
+      src: '',
+      title: ''
+    }
+  )
   const settings = {
     dots: true,
     infinite: true,
@@ -14,17 +19,50 @@ const HomeSlide = () => {
     fade: true,
     autoplay: true,
   };
+  useEffect(() => {
+    switch (props.id) {
+      case 'about':
+        setImg(srcImgHeader[0])
+        break;
+      case 'recruit':
+        setImg(srcImgHeader[1])
 
+        break;
+      case 'contact':
+        setImg(srcImgHeader[2])
+        break;
+      case 'simulation':
+        setImg(srcImgHeader[3])
+        break;
+      case 'renovation':
+        setImg(srcImgHeader[4])
+        break;
+      default:
+
+    }
+  }, [props.id])
   return (
     <>
       <div className="container-fluild slide__container">
-        <Slider {...settings}>
-          {data?.map((item) => (
-            <div key={item.id}>
-              <img src={item.src} alt='img' className='slide__img'></img>
+        {
+          props.id !== 'home' ?
+            <div >
+              <img src={img.src} alt={img.title} className='slide__img slide__img--nothomepage  h-65 '></img>
+              <div className='img__title'>
+                <h1>{img.title}</h1>
+                <span></span>
+                <p>{img.text}</p>
+              </div>
             </div>
-          ))}
-        </Slider>
+            : <Slider {...settings}>
+              {data?.map((item) => (
+                <div key={item.id}>
+                  <img src={item.src} alt='img' className='slide__img'></img>
+                </div>
+              ))}
+            </Slider>
+        }
+
       </div>
     </>
   )

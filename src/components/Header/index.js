@@ -5,7 +5,7 @@ import './style.css'
 import Navbar from '../NavBar/index';
 import HomeSlide from '../Slide';
 import HeaderMobile from '../HeaderMobile';
-const Header =() =>{
+const Header =(props) =>{
   return (
     <div className='header'>
       <Row className="header__nav">
@@ -19,7 +19,7 @@ const Header =() =>{
         </Col>
         <HeaderMobile/>
     </Row>
-    <HomeSlide/>
+    <HomeSlide id={props.id}/>
     </div>  
   );
 }

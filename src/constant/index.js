@@ -1,7 +1,7 @@
 export const dataHeaderSlide = [
   {
     id: 0,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-9.png'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-9.webp'
   },
   {
     id: 1,
@@ -9,7 +9,7 @@ export const dataHeaderSlide = [
   },
   {
     id: 2,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-2.jpg'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-2.webp'
   },
   {
     id: 3,
@@ -17,33 +17,43 @@ export const dataHeaderSlide = [
   },
   {
     id: 4,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-4.jpg'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-4.webp'
   },
   {
     id: 5,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-5.png'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-5.webp'
   },
   {
     id: 6,
-    src: 'https://isamigiken.gattscom.com/image/top/header-bg-6.png'
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-6.webp'
   },
 ]
 
-// export const dataIsamiGikenSlide = [
-//   {
-//     id: 0,
-//     src: 'https://isamigiken.gattscom.com/image/top/ss_slider_img1.png'
-//   },
-//   {
-//     id: 1,
-//     src: 'https://isamigiken.gattscom.com/image/top/ss_slider_img2.png'
-//   },
-//   {
-//     id: 2,
-//     src: 'https://isamigiken.gattscom.com/image/top/ss_slider_img3.jpg'
-//   },
-//   {
-//     id: 3,
-//     src: 'https://isamigiken.gattscom.com/image/top/ss_slider_img4.jpg'
-//   },
-// ]
+export const srcImgHeader = [
+  {
+    src: 'https://isamigiken.gattscom.com/image/about/info_mv.jpg?_20230517',
+    title: 'About',
+    text: '会社概要'
+  },
+  {
+    src: 'https://isamigiken.gattscom.com/image/recruit/recruit_mv.jpg',
+    title: 'Recruit',
+    text: '採用情報'
+  },
+  {
+    src: 'https://isamigiken.gattscom.com/image/contact/contact_mv.jpg',
+    title: 'Contact',
+    text: 'お問い合わせ'
+  },
+  {
+    src: 'https://isamigiken.gattscom.com/image/simulation/simulation_top_mv.jpg',
+    title: 'Simulation',
+    text: '料金シミュレーション'
+  },
+  {
+    src: 'https://isamigiken.gattscom.com/image/renovation/renovation_mv.jpg',
+    title: 'Renovation',
+    text: '施工事例'
+  }
+]
+

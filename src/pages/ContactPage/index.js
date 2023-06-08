@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../../Layout';
 
-function SimulationPage() {
+function Contact() {
   return (
-    <Layout id='simulation'>
+    <Layout id='contact'>
       {/* component children */}
     </Layout>
   );
 }
 
-export default SimulationPage;
+export default Contact;
