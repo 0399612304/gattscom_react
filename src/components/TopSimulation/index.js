@@ -8,7 +8,7 @@ const Simulation = () => {
         alt=""
       ></img>
       <a href="https://home.gattscom.com/">
-        <img
+        <img className="top-simulation-background-in"
           src="https://isamigiken.gattscom.com/image/top/simulation_mobile.png?_20230309"
           alt=""
         ></img>

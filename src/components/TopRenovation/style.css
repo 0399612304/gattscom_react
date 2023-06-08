@@ -1,0 +1,64 @@
+.Top-renovation{
+    padding: 50px 150px;
+}
+.Top-renovation-top{
+    max-width: 1200px;
+}
+.Top-renovation-top-title{
+    display: flex;
+    color: #004097;
+    border-bottom: 2px solid #99b3d5;
+    
+}
+.Top-renovation-top-title h2{
+    font-size: 55px;
+    padding-right: 2%;
+    margin: 0px;
+}
+.Top-renovation-top-title div{
+    font-size: 28px;
+    padding-top: 20px;
+}
+.Top-renovation-top-content{
+    color: #333333;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    text-align: left;
+    padding: 25px 0px 70px 0px;
+}
+.Top-renovation-desc-button{
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.Top-renovation-desc-button :hover{
+    background-color: #246cd2;
+}
+.Top-renovation-desc-button a{
+    background-color: #004097;
+    color: #fff;
+    padding: 16px 72px;
+    border-radius: 32px;
+    font-size: 19.2px;
+    transition: .3s;
+    font-weight: bolder;
+}
+@media screen and (max-width: 1600px){
+    .Top-renovation-top{
+        max-width: 75vw;
+    }
+    .Top-renovation-desc-button a {
+    padding: 1vw 4.5vw;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+}
+
+.Top-renovation-desc-button {
+    padding: 3vw 0;
+}
+}

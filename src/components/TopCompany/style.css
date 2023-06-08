@@ -1,0 +1,61 @@
+.Top-information{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 0px;
+}
+.Top-information a img{
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+    filter: brightness(50%);
+    object-fit: cover;
+    transition: 0.3s;
+}
+.Top-information a img:hover{
+    filter: brightness(100%);
+}
+.Top-information a .Top-information-staff-text{
+   color: white;
+   width: 30%;
+   position: absolute;
+   bottom: -255%;
+   text-align: left;
+   padding-left: 5px;
+   display: flex;
+
+}
+.Top-information a .Top-information-staff-text div{
+    color: white;
+    padding-top: 37px;
+    padding-left: 5px;
+    font-size: 40;
+ }
+.Top-information a .Top-information-staff-text h3{
+    align-items: baseline;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+ }
+ .Top-information a .Top-information-staff-text ::after
+{
+    content: '';
+    position: absolute; 
+    left: 97%;
+    bottom: 0;
+    width: 32px;
+    height: 2.4px;
+    background-color: white;
+    transform: translate(3.2px, -11.2px) rotate(45deg);
+} 
+.Top-information a .Top-information-staff-text ::before
+{
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    left: 16px;
+    height: 2px;
+    background-color: white;
+} 
