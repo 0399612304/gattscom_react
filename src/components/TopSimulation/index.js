@@ -1,19 +1,29 @@
 import React from "react";
 import "./style.css";
+import simulation_1 from "../../asset/images/top/simulation_bg.jpg";
+import simulation_2 from "../../asset/images/top/simulation_img.png";
+import simulation_mobile from "../../asset/images/top/simulation_mobile.png";
 const Simulation = () => {
   return (
-    <div className="top-simulation">
-      <img className="top-simulation-background"
-        src="	https://isamigiken.gattscom.com/image/top/simulation_bg.jpg"
-        alt=""
+    <section className="top-simulation">
+      <img
+        className="top-simulation-background"
+        src={simulation_1}
+        alt="img"
       ></img>
-      <a href="https://home.gattscom.com/">
+      <a href="/simulation">
         <img
-          src="https://isamigiken.gattscom.com/image/top/simulation_mobile.png?_20230309"
-          alt=""
+          className="top-simulation-background-in"
+          src={simulation_2}
+          alt="img"
+        ></img>
+        <img
+          className="simulation-mobile"
+          src={simulation_mobile}
+          alt="img"
         ></img>
       </a>
-    </div>
+    </section>
   );
 };
 

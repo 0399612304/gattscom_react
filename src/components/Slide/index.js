@@ -61,7 +61,8 @@ const HomeSlide = (props) => {
                 <p>{img.text}</p>
               </div>
             </div>
-            : <Slider {...settings}>
+            //arrows={false}
+            : <Slider {...settings} >
               {data?.map((item) => (
                 <div key={item.id}>
                   <img src={item.src} alt='img' className='slide__img'></img>

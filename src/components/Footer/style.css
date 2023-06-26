@@ -1,99 +1,160 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
 .footer{
     background-color: #00204c;
     color: aliceblue;
-    height: 420px;
+    height: auto;
     margin: auto;
   }
+  .footer-top img{
+    width: 5.25vw;
+    height: 5.25vw;  
+   }
   .footer-top{
     display: flex;
-    padding: 20px 50px 0px 50px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
     width: 75%;
     margin: auto;
+    
   }
-  .footer-top h1 {
-    font-size: 30px;
+  .footer-top-phone-content h3 , .footer-top-email-content h3 {
+    
+    font-size: 3vw;
+    margin: 0px;
+    font-weight: 700;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;  */
   }
+
   .footer-top-phone{
     display: flex;
-    margin-right: 20px;
-    padding-right: 20px;
     width: 50%;
-    border-right: 2px solid white;
+    border-right: 2px solid #fff;
+    padding: 3.12vw 3.12vw 3.12vw 0vw;
+    justify-content: space-between;
   }
   .footer-top-phone-content{
     width: 75%;
     text-align: left;
-    font-size: 10px;
+    line-height: 0.75vw;
   }
-  .footer-top-phone-icon{
-    padding: 40px 0px 30px 0px  ;
-   
+  .footer-top-phone-content p{
+    font-size: 1vw;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
   }
+      .phone-content p {
+        font-size: 1vw;
+        font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+      }
   .footer-top-email{
     display: flex;
     padding-right: 0px;
     width: 50%;
-  }
-  .footer-top-email-icon{
-    padding: 40px 0px 30px 0px;
+    padding: 3.12vw 0vw 3.12vw 3.12vw ;
+    justify-content: space-between;
   }
   .footer-top-email-content{
     width: 75%;
     text-align: left;
-    font-size: 10px;
-  }
-  .footer-top img{
-    height: 63px;
-    width: 63px;
+    line-height: 1vw;
   }
   .footer-last{
     display: flex;
-    padding: 50px 0px;
-    width: 80%;
+    padding: 6.25vw 0 3.75vw 0;
+    width: 75%;
     margin: auto ;
+    justify-content: space-between;
   }
   .footer-last-name{
-    margin: auto;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
     text-align: left;
-  
+    justify-content: space-between;
+    gap: 3.438vw;
   }
-  .footer-last-name-img{
-   padding-bottom: 50px;
+  .privacy-copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 4;
   }
-  .footer-last-name-content{
-    font-size: 13px;
-   }
-  .footer-last-name-content-address{
-    padding-bottom: 5px;
-  }
-  .footer-last-menu{
-    width: 60%;
-    float: right;
+  .privacy-copyright p {
+    margin: 0px;
     text-align: right;
+    font-size: 1vw;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  }
+  .footer-last-name-img img{
+    width: 18.75vw;
+   }
+  .footer-last-name-content{
+    font-size: 1vw;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+   
+   }
+  .footer-last-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.625vw;
+    /* float: right;
+    text-align: right; */
   }
   .footer-last-menu ul{
       display: flex; 
       list-style: none;   
+      justify-content: right;
+  margin: 0px;
+      gap: 1.875vw;
+      font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
   }
   .footer-last-menu li{
-    font-size: 12px;
-    padding-right: 20px;
+    font-size: 1vw;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  
+    /* padding-right: 20px; */
   }
+  .footer-last-menu li .privacy{
+    text-align: right;
+  }
+
   .footer-last-menu-copyright{
-    font-size: 12px;
+    font-size: 1vw;
   padding-top: 30px;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  }
+  .footer-last-name-content p{
+    font-size: 1vw;
+    margin: 0px;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
   }
   a {
     text-decoration: none;
     color: white;
+  }
+  .phone-content .br{
+    display: none;
+  }
+  .phone-content p{
+    margin: 0;
+    width: 26vw;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  }
+  .footer-top-email p{
+    margin:0;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  }
+  .footer-last-name-content .tel{
+    display: flex;
+   }
+  .footer-last-name-content .br{
+    display: none;
   }
   @media screen and (max-width: 768px){
     .footer{
       width: 100%;
       padding: 0px;
       height: auto;
+      padding:0 ;
     }
     .footer-top{
       display: flex;
@@ -101,43 +162,51 @@
       width: 100%;
       padding: 0px;
     }
-    .footer-top h1 {
-      font-size: 30px;
-    }
-    .footer-top img{
-      width: 110px;
-      height: 110px;
+   .phone{
+     width: 5.25vw;
+     height: 5.25vw;  
     }
     .footer-top-phone{
       width: 100%;
-      border-bottom: 2px solid white;
-      padding: 0px 0px 25px 25px;
+      border-bottom: 1px solid #fff;
+      padding:  3.25vw 2vw;
+      border-right: 0;
     }
-    .footer-top-phone-content {
-      width: 80%;
+    .footer-top h3{
+    font-size: 8vw;
+    line-height: 1;
+    margin-bottom: 0.8vw;
     }
-    .footer-top-phone-content h1{
-      font-size: 60px;
-      margin: 20px 0px 0px 0px ;
+    .footer-top-phone-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
-    .footer-top-phone-content a{
-      font-size: 23px;
+    .footer-top img{
+      width: 14.25vw;
+      height: 14.25vw;
+    }
+    .phone-content p{
+      font-size: 3vw;
+      margin: 0;
+      width: auto;
+    }
+    .footer-top-phone-content p{
+      line-height: 1.5;
     }
     .footer-top-email{
       width: 100%;
-      border-bottom: 2px solid white;
-      padding: 0px 0px 25px 25px;
+      /* border-bottom: 1px solid #fff; */
+      padding: 3.25vw 2vw;
     }
-    .footer-top-email-content h1{
-      font-size: 60px;
-      margin: 40px 0px 0px 0px ;
+    .footer-top-email-content p{
+      font-size: 3vw;
+      margin: 0;
     }
-    .footer-top-email-content {
-      width: 80%;
+    .footer-top-phone-content .br{
+      display: block;
     }
-    .footer-top-email-content a{
-      font-size: 23px;
-    }
+
     .footer-top-phone-content-time{
       display: flex;
       flex-direction: column;
@@ -145,9 +214,28 @@
     .footer-last{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap : 3vw;
+      padding:6vw 0 ;
+      margin: 0;
+      width: 100%;
+    }
+    .footer-last-name-img{
+      display: flex;
+    justify-content: center;
+    }
+    .footer-last-name-img img{
+      width: 45vw;
+     }
+     
+    .footer-last-name-content p{
+      font-size: 3vw;
+      margin: 0px;
+      text-align: center;
     }
     .footer-last-name-content-address{
-      font-size: 23px;
+      /* font-size: 23px; */
       width: 500px;
       justify-content: center;
     align-items: center;
@@ -155,4 +243,38 @@
     .footer-last-menu ul{
       width: 500px;
     }
+    .footer-last-menu-content{
+      display: none;
+    }
+    .privacy-copyright{
+      flex: 4;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3vw;
   }
+  .privacy-copyright ul{
+    display: flex;
+    justify-content: center;
+    gap: 5.875vw;
+    padding: 0;
+  }
+   .privacy-copyright li {
+    font-size: 2.5vw;
+    text-decoration: underline;
+    text-align: center;
+   }
+   .privacy-copyright p {
+    font-size: 2.5vw;
+    text-align: center;
+   }
+   .footer-last-name-content  .mail{
+    display: none;
+   }
+   .footer-last-name-content .tel {
+    padding: 0 0 0 3vw;
+    display: block;
+   }
+    }
+  

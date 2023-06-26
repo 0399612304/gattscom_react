@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './style.css'
+import phone from '../../asset/images/common/header-phone.png'
+import mail from '../../asset/images/common/header-mail.png'
 
 function HeaderMobile() {
   const [open, setOpen] = useState(false)
@@ -13,15 +15,15 @@ function HeaderMobile() {
           <li><a href="/simulation">料金シミュレーション</a></li>
           <li><a href="/about">会社概要</a></li>
           <li><a href="/recruit">採用情報</a></li>
-          <li><a href="/news_lists">お知らせ</a></li>
+          <li><a href="/new-list">お知らせ</a></li>
         </ul>
         <div className="contact__area__mobile">
           <a href="tel:0668447078" className="phone">
-            <img src="https://isamigiken.gattscom.com/./image/common/header-phone.png" alt="" />
+            <img src={phone} alt="" />
             <span>06-6844-7078</span>
           </a>
           <a href="/contact" className="mail">
-            <img src="https://isamigiken.gattscom.com/./image/common/header-mail.png" alt="" />
+            <img src={mail} alt="" />
             <p>お問い合わせはこちら</p>
           </a>
         </div>

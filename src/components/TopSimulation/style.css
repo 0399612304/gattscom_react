@@ -5,6 +5,8 @@
 .top-simulation a img{
     width: 100%;
     height: auto;
+    object-fit: cover;
+    overflow: hidden;
 }
 .top-simulation a{
     position: absolute;
@@ -18,7 +20,15 @@
     height: 100%;
     width: 100%;
 }
+.top-simulation .simulation-mobile{
+    display: none;
+}
 
 @media screen and (max-width: 768px){
-
+.top-simulation .simulation-mobile{
+    display: block  ;
+}
+.top-simulation .top-simulation-background-in {
+    display: none;
+}
 }

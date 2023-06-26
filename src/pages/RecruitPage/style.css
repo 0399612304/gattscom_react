@@ -1,18 +1,47 @@
-.content {
+.content-recruit{
+  background-color: #E6ECF5;
+}
+.container{
+  max-width: 79.5vw;
+  margin: 0 auto;
+  padding: 5vw 2.25vw;
+}
+.tb-recruit{
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4vw 0;
-  background-color: #e6ecf5;
 }
-.content__table {
-  width: 80vw;
+.content-recruit .br{
+  display: none;
 }
-.content__table__row h4{
-  border-right: 1px solid #ccc;
-  height: 100%;
-  margin-bottom: 0;
-  padding: 25px;
+.tb-recruit .tr-top tbody{
+   /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; */ 
+  /* font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif; */
+}
+.tb-recruit th , .tb-recruit td{
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;;
+  font-size: 1.575vw;
+  padding: 0.625em;
+}
+.tb-recruit  th{
+  border-left : solid 1px #ccc;
+  width: 30%;
+} 
+.tb-recruit .tr-top {
+  border-top:solid 1px #ccc; ;
+}
+@media screen and (max-width: 768px){
+  .container{
+    max-width: none;
+    margin: 0 ;
+    padding: 7.5vw 2vw;
+  }
+  .content-recruit .br{
+    display: block;
+  }
+  .tb-recruit  th{
+        width: 25%;
+      } 
+  .tb-recruit th , .tb-recruit td{
+    font-size: 3.2vw;
+  }
 }

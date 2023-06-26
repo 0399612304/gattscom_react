@@ -29,6 +29,21 @@ export const dataHeaderSlide = [
     src: 'https://isamigiken.gattscom.com/image/top/header-bg-6.webp'
   },
 ]
+export const TopRenovation = [
+  {
+    id: 0,
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-9.webp'
+  },
+  {
+    id: 1,
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-9.webp'
+  },
+  {
+    id: 2,
+    src: 'https://isamigiken.gattscom.com/image/top/header-bg-9.webp'
+  },
+  
+]
 
 export const srcImgHeader = [
   {
@@ -63,7 +78,7 @@ export const srcImgHeader = [
   },
   {
     src: 'https://isamigiken.gattscom.com/image/privacy_policy/privacy_policy_mv.jpg',
-    title: 'privacypolicy',
+    title: 'Privacy Policy',
     text: 'プライバシーポリシー'
   }
 ]
@@ -80,6 +95,18 @@ export const options = [
 {
   main: 'バルコニー',
   children:['1個','2個以上']
-},
+}
+]
+
+export const nameOptions = [
+  {
+    children:'何階建てですか？'
+  },
+  {
+    children:'何階建てですか？'
+  },
+  {
+    children:'バルコニーの数はいくつありますか？'
+  },
 ]
 

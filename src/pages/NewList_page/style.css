@@ -1,43 +1,65 @@
-
-.content .time {
-    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-    color: #231815;
-    font-weight: 550;
-    font-size: 16px;
-    
-}
-.content .name {
-    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-    color: #231815;
-    font-weight: 550;
-    transition: 0.3s;
-    font-size: 16px;
+.content{
+    background-color: #E6ECF5;
+    padding: 5vw 2.25vw;
 }
 .content ul {
-    width: 80%;
+    margin: 0 auto;
+    max-width: 75vw;
+    padding: 0px;
+    width: 100%;
+}
+.content ul li{
+    padding: 1.563vw 0 ;
+    gap: 2vw;
+    
+}
+.content ul li time  {
+    font-size: 1vw;
+    margin: 0;
+    font-weight: 700;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+}
+.content .time {
+    color: #231815;
+}
+.content a {
+    color: #231815;
+    transition: 0.3s;
+    font-size: 1vw;
+    font-weight: 700;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;   
 }
 .content li {
     list-style: none;
     display: flex;
 }
-.content li div{
-    padding-right: 20px;
-}
 .content li a:hover {
-    box-shadow: 0px 1px #333333;
+    text-decoration: underline;
 }
 .content .content-top {   
     border-top: 1px solid #99b3d5;
     border-bottom: 1px solid #99b3d5;
-    padding: 20px;
+
 }
 .content .content-desc {
     border-bottom: 1px solid #99b3d5;
-    padding: 20px;
 }
 @media screen and (max-width: 768px){
+    .content{
+        padding: 0;
+    }
+    .content ul{
+        padding: 7.5vw 2vw;
+        margin: 0;
+        max-width: none;
+    }
     .content li {
         display: flex;
         flex-direction: column;
     }
+    .content ul li a , .content ul li time {
+        font-size: 3vw;
+    }
+
+
 }

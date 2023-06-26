@@ -11,6 +11,10 @@
 .content__table {
   width: 76%;
 }
+.content__table .Text-red {
+  color: red;
+  text-align: left;
+}
 .title__container {
   display: flex;
   align-items: center;

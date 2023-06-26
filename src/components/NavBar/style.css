@@ -1,12 +1,11 @@
 .navbar{
-  background-color: #fff;
   height: 5vw;
   display: flex;
   width: 58vw;
   align-items: center;
   padding: 0;
+  background-color: #fff;
   border-radius: 38px;
-  overflow: hidden;
 }
 .navbar ul {
   list-style: none;
@@ -14,6 +13,9 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  border-top-left-radius: 38px;
+  border-bottom-left-radius: 38px;
+  background-color: #fff;
 }
 .navbar ul li{
    justify-content: center;
@@ -29,10 +31,13 @@
 }
 .contact__area{
   position: absolute;
-  right: 0;
+  right: -5px;
   height: 100%;
   background-color: #004097;
   width: 30%;
+  border-top-right-radius: 38px;
+  border-bottom-right-radius: 38px;
+  z-index: 2;
 }
 .contact__area a{
   height: 100%;
