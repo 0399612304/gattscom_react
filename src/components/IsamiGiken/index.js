@@ -70,14 +70,14 @@ export default class IsamiGiken extends Component {
             </div>
 
           </div>
-          {/* <div key={4} className='img__container'>
+          <div key={4} className='img__container'>
             <img className="img__main" src={img4} alt='img'></img>
             <div className="img__icon">
               <img src={icon4} alt='img'>
               </img>
               <span>ベランダで水漏れがある</span>
             </div>
-          </div> */}
+          </div>
         </Slider >
         <div className="button__container" style={{ textAlign: "center" }}>
           <button className="button pre" onClick={this.previous}>

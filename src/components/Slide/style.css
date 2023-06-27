@@ -1,19 +1,22 @@
-.slide__container:after {
+.slick-slider {
+  background-color: #e6ecf5;
+}
+
+.slide__img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.slide__img:after {
   position: absolute;
   content: "";
   display: block;
   width: 100%;
-  height: 100%;
+  height: 95%;
   background-color: #000;
   opacity: 0.5;
   top: 0;
-}
-
-.slide__img {
-  object-fit: fill;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
 }
 .slide__img--nothomepage {
   object-fit: cover;
@@ -27,7 +30,8 @@
 }
 .slick-dots li button:before {
   font-size: 20px;
-  color: #e6ecf5;
+  color: #cfdbeb;
+  opacity: 1;
 }
 .slick-dots li.slick-active button:before {
   color: #2e63a9;
@@ -36,7 +40,7 @@
   height: 65vh !important;
 }
 .img__title {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   display: flex;
   align-items: center;
@@ -44,6 +48,7 @@
   height: 8vw;
   padding: 0 10vw;
   color: #fff;
+  z-index: 1;
 }
 .img__title:after {
   position: absolute;
@@ -55,25 +60,34 @@
   opacity: 0.5;
   left: 0;
   bottom: 0;
+  z-index: -1;
 }
 .img__title h1 {
   font-size: 4vw;
-  z-index: 100;
 }
 .img__title span {
-  z-index: 100;
   width: 20px;
   height: 3px;
   display: block;
   background-color: #fff;
   margin: 18px 15px 0 15px;
-
 }
 .img__title p {
   margin: 0;
-  z-index: 100;
   font-size: 2vw;
   padding-top: 18px;
   font-weight: bold;
-
+}
+@media only screen and (max-width: 768px) {
+  .slide__img {
+    object-fit: cover;
+    height: 60vh;
+    position: relative;
+  }
+   .slick-dots li {
+   margin: 3px;
+   }
+  .slick-dots li button:before {
+    font-size: 2.3vw;
+  }
 }

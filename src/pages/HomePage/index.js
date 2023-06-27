@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../Layout";
-// import IsamiGiken from '../../components/IsamiGiken';
+import IsamiGiken from '../../components/IsamiGiken';
 import TopSimulation from "../../components/TopSimulation";
-// import Infomation from "../../components/Infomation";
+import Infomation from "../../components/Infomation";
 import News from "../../components/News";
 // import MidImage from "../../components/MidImage";
 import Renovation from "../../components/TopRenovation";
@@ -10,10 +10,10 @@ import Renovation from "../../components/TopRenovation";
 function HomePage() {
   return (
     <Layout id="home">
-      {/* <IsamiGiken />    */}
+      <IsamiGiken />   
       <TopSimulation />
       <Renovation />
-      {/* <Infomation /> */}
+      <Infomation />
       <News></News>
       {/* <MidImage></MidImage> */}
       {/* <ContactPage/> */}
