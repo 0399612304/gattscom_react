@@ -16,8 +16,8 @@ const HomeSlide = (props) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true,
     autoplay: true,
+    autoplaySpeed: 4000,
   };
   useEffect(() => {
     switch (props.id) {
@@ -47,15 +47,14 @@ const HomeSlide = (props) => {
 
     }
   }, [props.id])
-  console.log(img);
   return (
     <>
       <div className="container-fluild slide__container">
         {
           props.id !== 'home' ?
-            <div >
-              <img src={img.src} alt={img.title} className='slide__img slide__img--nothomepage  h-65 '></img>
-              <div className='img__title'>
+            <div className='slide__container--nothomepage'>
+              <img src={img.src} alt={img.title} className='slide__img slide__img--nothomepage '></img>
+              <div className='img__title img__title--nothomepage'>
                 <h1>{img.title}</h1>
                 <span></span>
                 <p>{img.text}</p>

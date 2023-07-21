@@ -4,9 +4,9 @@ import './style.css'
 function RenovationPage() {
   return (
     <Layout id='renovation'>
-      <div className='content'>
+      <section className='content-renovation'>
         <p>こちらのページは現在準備中です</p>
-      </div>
+      </section>
     </Layout>
   );
 }

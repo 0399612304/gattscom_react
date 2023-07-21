@@ -1,14 +1,44 @@
-.privacy_policy dl {
+.privacy_policy-content {
+
+}
+.privacy_policy-content .container{
+    max-width: 79.5vw;
+    margin: 0 auto;
+    padding: 5vw 2.25vw;
+}
+ 
+.privacy_policy-content .container dl {
     background-color: #fff;
-    padding: 32px;
-    margin: 0 10% 16px 10%;
+    padding: 2vw;
+    /* margin: 0 10% 16px 10%; */
     display: flex;
     flex-direction: column;
    
 }
-.privacy_policy dt {
-    font-size: 24px;
-    margin-bottom: 11.2px;
+.privacy_policy-content .container dt {
+    font-size: 1.5vw;
+    margin-bottom: 0.7vw;
+    font-weight: 400;
+     /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; */
+    /* font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif; */
+}
+.privacy_policy-content dd {
+    font-size: 1vw;
+    line-height: 2;
+    margin: 0;
+}
+.privacy_policy-content ol {
+    padding-left: 1.5rem;
+}
+.privacy_policy-content dl dd p {
+    margin: 0;
+    line-height: 2;
+}
+.privacy_policy-content dl dd a {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    line-height: 2;
 }
 .return_btn{
     display: block;
@@ -24,9 +54,38 @@
     display: inline-block;
     background-color: #004097;
     color: #fff;
-    padding: 16px 72px;
-    border-radius: 32px;
-    font-size: 19.2px;
     transition: 0.3s;
-   
+    padding: 1vw 4.5vw;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 768px){
+    .privacy_policy-content .container{
+        max-width: none;
+        margin: 0 ;
+        padding: 7.5vw 2vw;
+    }
+    .privacy_policy-content .container dt{
+        font-size: 4.5vw;
+         margin-bottom: 0.7vw;
+    }
+    .privacy_policy-content .container dd , 
+    .privacy_policy-content .container li {
+        color: #000;
+        font-size: 3vw;
+        line-height: 2;
+    }
+    .return_btn{
+        width: 100%;
+        margin-top: 3.75vw;
+    }
+    .return_btn a {
+        margin: 5vw auto;
+        width: 85%;
+        display: block;
+        padding: 3vw 4.5vw;
+        border-radius: 6vw;
+        font-size: 3.5vw;
+    }
 }

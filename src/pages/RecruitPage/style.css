@@ -1,10 +1,10 @@
 .content-recruit{
   background-color: #E6ECF5;
 }
-.container{
-  max-width: 79.5vw;
+.content-recruit .container{
+  max-width: 75vw;
   margin: 0 auto;
-  padding: 5vw 2.25vw;
+  padding: 5vw 0 ;
 }
 .tb-recruit{
   width: 100%;

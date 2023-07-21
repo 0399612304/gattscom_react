@@ -6,6 +6,7 @@ function NewlistPage() {
   return (
     <Layout id="new">
       <section className="content">
+        <div className="container">
         <ul>
           <li className="content-top">
             <time>2023年04月24日</time>
@@ -18,6 +19,7 @@ function NewlistPage() {
             <a href="/news_detail">サイトリニューアルのお知らせ。</a>
           </li>
         </ul>
+        </div>
       </section>
     </Layout>
   );

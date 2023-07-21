@@ -1,82 +1,63 @@
 .mid__images {
-  padding-bottom: 20vh;
-  background-color: #e6ecf5;
-}
-.mid__images__container {
-  width: 100%;
   position: relative;
+  overflow: hidden;
+  transition: .8s;
+  margin-bottom: 150px;
+  height: 500px;
 }
-.mid__images__container img {
-  object-fit: cover;
-  height: 80vh;
+.mid__images img {
+  margin: 0 auto;
   width: 100%;
-
-}
-
-.content__info a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-   filter: brightness(0.8);
-}
-.content__info a img:hover{
-  filter: brightness(100%);
+  filter: brightness(40%);
+  transition: 0.5s;
+  height: auto;
 }
 
 .mid__images__container img:hover{
   filter: brightness(1);
 }
 
-.mid__images__container:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  left: 0;
-  bottom: 0;
-  z-index: 2;
-}
 .mid__images a {
   position: absolute;
-  top: 24vh;
-  left: 29%;
-  background-color: #00204c;
-  z-index: 10;
-  height: 30vh;
-  width: 42vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  border: 2px solid #fff;
-  font-size: 3vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    /* font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif; */
+    font-weight: bolder;
+    color: #fff;
+    transition: .3s;
+    background-color: #00204c;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 20px 40px;
+    text-align: center;
 }
 .mid__images a:hover {
   background-color: #004097;
 }
+@media only screen and (max-width: 1600px){
+  .mid__images {
+    margin-bottom: 9.375vw;
+    height: 37.5vw;
+  }
+  .mid__images img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .mid__images a{
+    border-radius: 5px;
+    font-size: 3.125vw;
+    padding: 1.25vw 2.5vw;
+  }
+}
 
 @media only screen and (max-width: 768px) {
-  .mid__images__container img {
-    object-fit: inherit;
-    height: 25vh;
-    width: 100%;
-  }
   .mid__images a {
-    top: 7vh;
-    left: 27.5vw;
-    background-color: #00204c;
-    z-index: 10;
-    height: 12vh;
-    width: 45vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    font-size: 3vw;
+    background-color: #004097;
+    border: 1px solid #fff;
+    font-size: 3.7vw;
+    padding: 1.25vw 2.5vw;
   }
 }

@@ -9,20 +9,20 @@ import HeaderLogo from '../../asset/images/common/header-logo.png';
 
 const Header =(props) =>{
   return (
-    <div className='header'>
-      <Row className="header__nav">
-        <Col lg = {4} className="header__nav__logo">
+    <header className='header'>
+      <div className="header__nav">
+        <div  className="header__nav__logo">
           <a href="/">
             <img src={HeaderLogo} alt="logo" />
           </a>
-        </Col>
-        <Col lg = {8} className="nav__container m-0">
+        </div>
+        <div  className="nav__container ">
           <Navbar></Navbar>
-        </Col>
+        </div>
         <HeaderMobile/>
-    </Row>
+    </div>
     <HomeSlide id={props.id}/>
-    </div>  
+    </header>  
   );
 }
 

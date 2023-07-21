@@ -9,13 +9,32 @@ import Contact from "./pages/ContactPage";
 import RenovationPage from "./pages/RenovationPage";
 import NewlistPage from "./pages/NewList_page";
 import PrivacyPolicyPage from "./pages/PrivacyPoliicyPage";
-import { BackTop } from 'antd';
-import {UpOutlined} from "@ant-design/icons"
+import { FloatButton } from 'antd';
+import { ArrowUpOutlined } from '@ant-design/icons';
+import React, { useState, useEffect } from "react";
+import { FaAngleUp } from "react-icons/fa";
+import ScrollUpButton from "react-scroll-up-button";
 
 function App() {
+  const [showButton, setShowButton] = useState(false);
 
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.pageYOffset > 200) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
-    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -26,14 +45,25 @@ function App() {
         <Route path="/renovation" element={<RenovationPage />} />
         <Route path="/new-list" element={<NewlistPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-      </Routes> 
+      </Routes>
+      {/* <FloatButton className="my-back-top-button">
+      <FloatButton.BackTop
+        className="custom-back-top"
+        // icon={<SlArrowUp />}
+        duration={1000}
+      />
+      </FloatButton> */}
       <div>
-      {/* your component's content */}
-      <BackTop  className="my-back-top-button">
-        <UpOutlined />
-              </BackTop>
+
+      {showButton && (
+        <button onClick={handleClick} style={{ position: 'fixed', bottom: '50px', right: '50px' }}>
+          Back to top
+        </button>
+      )}
     </div>
+     
     </BrowserRouter>
+ 
   );
 }
 

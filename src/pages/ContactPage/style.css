@@ -1,4 +1,4 @@
-.btn--submit{
+/* .btn--submit{
   width: 36%;
   height: 5vw;
   border-radius: 5px;
@@ -73,4 +73,165 @@
   height: 10vw;
   font-size: 3vw;
 }
+} */
+
+.contact-content .content{
+  max-width: 75vw;
+  margin: 0 auto;
+  padding: 5vw 2.25vw;
+  display: flex;
+  flex-direction: column ;
+}
+
+.contact-content table {
+  width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-right: solid 1px #ccc;
+}
+
+.contact-content table tbody {
+  background-color: #fff;
+}
+.contact-content table tbody th  {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; */
+  box-sizing: border-box;
+  border-top: solid 1px #ccc;
+  border-left: 1px solid #ccc;
+  text-align: left;
+  font-size: 1.575vw;
+  padding: 0.625em;
+  background-color: #ececec;
+  width: 35%;
+}
+.contact-content table tbody td  {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; */
+  box-sizing: border-box;
+  border-top: solid 1px #ccc;
+  border-left: 1px solid #ccc;
+  text-align: left;
+  font-size: 1.575vw;
+  padding: 0.625em;
+  background-color: #fefefe;
+}
+.contact-content table tbody td input ,
+.contact-content table tbody td textarea {
+  appearance: none;
+  background-color: #fefefe;
+  border: 1px solid #cacaca;
+  box-sizing: border-box;
+  color: #0a0a0a;
+  display: block;
+  font-size: 1.575vw;
+  line-height: 1.5;
+  padding: 8px;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  width: 100%;
+}
+.contact-content table tbody td input:focus{
+  background-color: #ffc;
+  box-sizing: border-box;
+  outline: 2px solid #333333;
+}
+.contact-content table tbody td textarea:focus{
+  background-color: #ffc;
+  box-sizing: border-box;
+  outline: 2px solid #333333;
+}
+.contact-content .contact-content .title {
+  padding-right: 0.75vw;
+}
+.contact-content .title .required {
+  background-color: #c00;
+    border-radius: 6px;
+    color: #fefefe;
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: .938vw;
+    line-height: .938vw;
+    padding: 0.375vw 0.5vw;
+}
+.contact-content .title .label {
+  padding-left: 0.75vw;
+}
+.contact-content .content .submit{
+  display: block;
+  text-align: center;
+  background-color: #046c08;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  width: 50%;
+  transition: 0.3s;
+  margin: 2vw auto;
+    border-radius: 5px;
+    font-size: 1.575vw;
+    font-weight: 700;
+    padding: 1.2vw 1.875vw;
+}
+.contact-content table input[placeholder] , 
+.contact-content table textarea[placeholder]
+{
+  font-size:1.575vw;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; */
+}
+.contact-content table input[type],
+.contact-content table textarea[type]
+{
+  font-size: 1.575vw;
+  font-weight: 500;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .contact-content .content{
+    max-width: none;
+    margin: 0;
+    padding: 7.5vw 2vw;
+    display: flex;
+    flex-direction: column ;
+  }
+  .contact-content .content table tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-content .content table tr th{
+    width: 100%;
+  }
+  .contact-content .title .required {
+    font-size: 2.5vw;
+    padding: 1.8vw;
+  }
+  .contact-content .title .label {
+    font-size: 4vw;
+  }
+  .contact-content table tbody td {
+    font-size: 4vw;
+    padding: 2vw;
+  }
+  .contact-content table input[placeholder],
+  .contact-content table textarea[placeholder]
+  {
+    font-size: 4vw;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    /* font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; */
+  }
+  .contact-content table input[type],
+  .contact-content table textarea[type]{
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  }
+  .contact-content .content .submit{
+    margin: 2vw auto;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 4vw;
+    padding: 3.5vw 1.875vw;
+    width: 100%;
+  }
 }

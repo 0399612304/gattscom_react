@@ -2,6 +2,11 @@
     background-color: #E6ECF5;
     padding: 5vw 2.25vw;
 }
+.content .container{
+    max-width: 75vw;
+    margin: 0 auto;
+    padding: 0;
+}
 .content ul {
     margin: 0 auto;
     max-width: 75vw;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './style.css'
 function Infomation(props) {
   return (
-    <div className="content__info">
+    <section className="content__info">
       <Link to="/about">
         <img src="https://isamigiken.gattscom.com/image/top/info_img1.webp?_20230517" alt="会社概要"></img>
         <div className="text">
@@ -25,7 +25,7 @@ function Infomation(props) {
           <p>採用情報</p>
         </div>
       </Link >
-    </div>
+    </section>
   );
 }
 
